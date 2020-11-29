@@ -31,7 +31,7 @@ print()
 
 
 #Define the polygon geometric characteristics
-Ax, Sx, Sy, Ix, Iy, Ixy=0, 0, 0, 0, 0 , 0
+Ax, Sx, Sy, Ix, Iy, Ixy, Xt, Yt, Ixt, Iyt, Ixyt=0, 0, 0, 0, 0 , 0, 0, 0, 0, 0, 0
 
 #Calculate the polygon geometric characteristics
 for i in range(n - 1):
@@ -48,8 +48,8 @@ Sy = Sy/6
 Ix = -Ix/12
 Iy = Iy/12
 Ixy = -Ixy/24
-xt = Sy/Ax
-yt = Sx/Ax
+Xt = Sy/Ax
+Yt = Sx/Ax
 Ixt = Ix - (yt**2*Ax)
 Iyt = Iy - (xt**2*Ax)
 Ixyt = Ixy + xt*yt*Ax
@@ -72,8 +72,8 @@ print(f"{'Sy:':<10} {Sy:<10.2f}")
 print(f"{'Ix:':<10} {Ix:<10.2f}")
 print(f"{'Iy:':<10} {Iy:<10.2f}")
 print(f"{'Ixy:':<10} {Ixy:<10.2f}")
-print(f"{'xt:':<10} {xt:<10.2f}")    
-print(f"{'yt:':<10} {yt:<10.2f}")
+print(f"{'Xt:':<10} {Xt:<10.2f}")    
+print(f"{'Yt:':<10} {Yt:<10.2f}")
 print(f"{'Ixt:':<10} {Ixt:<10.2f}")
 print(f"{'Iyt:':<10} {Iyt:<10.2f}")
 print(f"{'Ixyt:':<10} {Ixyt:<10.2f}")        
