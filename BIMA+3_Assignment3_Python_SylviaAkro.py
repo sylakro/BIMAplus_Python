@@ -50,9 +50,9 @@ Iy = Iy/12
 Ixy = -Ixy/24
 Xt = Sy/Ax
 Yt = Sx/Ax
-Ixt = Ix - (yt**2*Ax)
-Iyt = Iy - (xt**2*Ax)
-Ixyt = Ixy + xt*yt*Ax
+Ixt = Ix - (Yt**2*Ax)
+Iyt = Iy - (Xt**2*Ax)
+Ixyt = Ixy + Xt*Yt*Ax
 
 
 #Display a table of entered data by user
